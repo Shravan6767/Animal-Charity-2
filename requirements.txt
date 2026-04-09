@@ -1,5 +1,5 @@
-Flask
+flask
+pymongo[srv]
+dnspython
 gunicorn
 flask-cors
-pymongo
-dnspython
