@@ -1,14 +1,15 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from config import contacts_collection, donations_collection
+from flask import Flask, render_template
 
 app = Flask(__name__)
 CORS(app)
 
 # Home route
 @app.route('/')
-def home():
-    return "Server is running!"
+def index():
+    return render_template('index.html')
 
 
 # Contact route
