@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 
 # connect to MongoDB
-client = MongoClient("mongodb://localhost:27017/")
+client = MongoClient("mongodb+srv://yourUsername:yourPassword@cluster0.mongodb.net/yourDatabaseName?retryWrites=true&w=majority")
 
 # create database
 db = client["animal_charity"]
