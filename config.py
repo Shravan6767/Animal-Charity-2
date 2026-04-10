@@ -3,7 +3,7 @@ import os
 
 # connect to 
 client = MongoClient(os.environ.get("MONGO_URI"))
-
+serverSelectionTimeoutMS=5000
 # create database
 db = client["animal_charity_2"]
 
