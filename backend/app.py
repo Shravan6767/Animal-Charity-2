@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from backend.config import * contacts_collection, donations_collection
+from backend.config import contacts_collection, donations_collection
 from flask import Flask, render_template
 
 app = Flask(__name__)
